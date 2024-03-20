@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>huehuehue</title>
+    <style>
+      body {
+        background: #000000;
+        color: #ffffff;
+        text-shadow: 2px 2px 2px #02ffff;
+      }
+      h1{
+        color: firebrick;
+        text-align: center;
+      }
+      h4{
+        background: gold;
+      }
+    </style>
+  </head>
+  <body >
+    <h1>masters madrid</h1>
+    <h2>chaveamento:</h2>
+    <h4>16 a 24 jun:</h4>
+    <h2>Alerta de mensagem</h2>
+
+    <p style="text-align: center;" >
+<button onclick="alerta()" style="background: red; color: white;">Alerta</button>
+</p>
+
+<h2>clique abaixo para trocar a cor do site </h2>
+<p style="text-align: center;"> 
+<button onclick="escolhacor('red')">vermelho</button>
+<button onclick="escolhacor('blue')">azul</button>
+<button onclick="escolhacor('green')">verde</button>
+<button onclick="escolhacor()">escolha</button>
+</p>
+  </body>
+  <script>
+    console.log(`dia`);
+    function alerta(){
+        var nome = prompt ("diga seu nome")
+        alert(`olá ${nome}`)
+    }
+    // function vermelho(){
+    //     document.getElementsByTagName("body")[0].style.background = "#ff0000"
+
+    // }
+    // function azur(){
+    //     document.getElementsByTagName("body")[0].style.background = "#0000ff"
+
+    // }
+    // function gren(){
+    //     document.getElementsByTagName("body")[0].style.background = "#00ff00"
+
+    // }
+    escolhacor=(cor)=>{
+      if (cor !== ""){
+       document.getElementsByTagName("body")[0].style.background = cor
+      }
+
+
+      if(cor == null){
+        document.getElementsByTagName("body")[0].style.background = prompt ("digite uma cor em inglês")
+
+      }
+    }
+
+
+//     function mudarCorFundo() {
+//   // Gera um valor aleatório para cada canal RGB
+//   const r = Math.floor(Math.random() * 256);
+//   const g = Math.floor(Math.random() * 256);
+//   const b = Math.floor(Math.random() * 256);
+
+//   // Converte os valores RGB para uma string
+//   const corRGB = `rgb(${r}, ${g}, ${b})`;
+
+//   // Define a cor de fundo do corpo da página
+//   document.body.style.backgroundColor = corRGB;
+//   setInterval(mudarCorFundo, 1000);
+ 
+// }
+
+  </script>
+</html>
+<!-- document.getElementsByTagName("body")[0].style.background = "#44f9f2" -->
