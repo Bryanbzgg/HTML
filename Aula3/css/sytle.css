@@ -1,0 +1,16 @@
+/*criador de variavel para documentos*/
+:root{
+    --bg-url: url(../img/dark.png)
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background: var(--bg-url) no-repeat top center / cover;
+    height: 100vh
+}
